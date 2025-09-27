@@ -43,6 +43,8 @@ namespace MSS.MemeSuperpack
 		public static readonly XenotypeDef MSSMeme_Taff;
 		public static readonly FactionDef MSSMeme_TaffsFaction;
 
+		public static readonly ThoughtDef MSSMeme_Marked;
+
 		[MayRequireIdeology]
 		public static TaleDef MSSMeme_WatchedRimRim;
 
