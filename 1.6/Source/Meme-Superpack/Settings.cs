@@ -38,6 +38,8 @@ namespace MSS.MemeSuperpack
 		public bool fireTrails = true;
 		public bool combustionAnimalsCanDoorbash = true;
 
+		public bool EnableTaffRaids = true;
+
 		private readonly Listing_Standard _options = new();
 		private const float RowHeight = 32f;
 		private const float Indent = 9f;
@@ -46,20 +48,19 @@ namespace MSS.MemeSuperpack
 		{
 			Features,
 			Events,
-			UI
+			UI,
 		}
 
 		private static Tab _tab = Tab.Features;
 
 		private Rect DrawTabs(Rect rect)
 		{
-			List<TabRecord> tabsList =
-				new()
-				{
-					new TabRecord("Features", () => _tab = Tab.Features, _tab == Tab.Features),
-					new TabRecord("Events", () => _tab = Tab.Events, _tab == Tab.Events),
-					new TabRecord("UI", () => _tab = Tab.UI, _tab == Tab.UI)
-				};
+			List<TabRecord> tabsList = new()
+			{
+				new TabRecord("Features", () => _tab = Tab.Features, _tab == Tab.Features),
+				new TabRecord("Events", () => _tab = Tab.Events, _tab == Tab.Events),
+				new TabRecord("UI", () => _tab = Tab.UI, _tab == Tab.UI),
+			};
 
 			Rect tabRect = rect.ContractedBy(0, RowHeight);
 			TabDrawer.DrawTabs(tabRect, tabsList);
@@ -240,6 +241,11 @@ namespace MSS.MemeSuperpack
 				"Allow Grignr",
 				ref grignr,
 				"Allow a random shard of Grignr to attack the colony (Once per game only)\nThis Does not send a letter!"
+			);
+			_options.CheckboxLabeled(
+				"Allow Taff Raids",
+				ref EnableTaffRaids,
+				"Allow Taffs to raid the colony"
 			);
 		}
 

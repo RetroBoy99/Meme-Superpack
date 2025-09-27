@@ -40,6 +40,9 @@ namespace MSS.MemeSuperpack
 
 		public static ThingDef MSSMeme_StickbugIncoming;
 
+		public static readonly XenotypeDef MSSMeme_Taff;
+		public static readonly FactionDef MSSMeme_TaffsFaction;
+
 		[MayRequireIdeology]
 		public static TaleDef MSSMeme_WatchedRimRim;
 
