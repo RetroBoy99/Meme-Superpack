@@ -48,6 +48,10 @@ namespace MSS.MemeSuperpack
 		[MayRequireIdeology]
 		public static TaleDef MSSMeme_WatchedRimRim;
 
+		public static ThingDef MSSMeme_Balloon;
+		public static ThingDef MSSMeme_PawnFlyer_Balloon;
+		public static JobDef MSSMeme_ExtractTarget;
+
 		static MemeSuperPackDefOf()
 		{
 			DefOfHelper.EnsureInitializedInCtor(typeof(MemeSuperPackDefOf));

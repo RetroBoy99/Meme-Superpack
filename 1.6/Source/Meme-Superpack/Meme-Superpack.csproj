@@ -79,6 +79,12 @@
         <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md;../../../CONTINUITY.md" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="..\..\..\modlist.xml">
+        <Link>Meme-Superpack\modlist.xml</Link>
+      </Content>
+    </ItemGroup>
+
     <!-- Add A step to the build to run csharpier on build -->
     <Target Name="CheckCsharpier" BeforeTargets="Build">
         <Exec Command="dotnet csharpier --version" IgnoreExitCode="true">
