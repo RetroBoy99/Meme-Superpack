@@ -19,10 +19,10 @@
 		<possessionCount>5</possessionCount>
 		<alwaysHaulable>true</alwaysHaulable>
 		<graphicData>
-			<texPath>Things/MSS_Balloon_Icon</texPath>
+			<texPath>Things/Item/MSS_Balloon_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<uiIconPath>Things/MSS_Balloon_Icon</uiIconPath>
+		<uiIconPath>Things/Item/MSS_Balloon_Icon</uiIconPath>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<stackLimit>5</stackLimit>
@@ -91,7 +91,7 @@
 		</pawnFlyer>
 		<drawerType>RealtimeOnly</drawerType>
 		<graphicData>
-			<texPath>Things/MSS_Balloon_Icon</texPath>
+			<texPath>Things/Item/MSS_Balloon_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>5</drawSize>
 			<drawOffset>0,0,2.5</drawOffset>

@@ -1,9 +1,13 @@
 using RimWorld;
 using Verse;
 
-namespace MSSMeme.Projectiles
+namespace MSS.MemeSuperpack.MSSFP.Projectiles
 {
-	public class MSSMeme_Projectile_PlaqueBullet : Projectile
+	/// <summary>
+	/// Compatibility version of the plaque bullet projectile that directly references MSSFP
+	/// This assembly is only loaded when MSSFP is present
+	/// </summary>
+	public class MSSMeme_Projectile_PlaqueBullet_Compatibility : Projectile
 	{
 		protected override void Impact(Thing hitThing, bool blockedByShield = false)
 		{
@@ -70,7 +74,7 @@ namespace MSSMeme.Projectiles
 			var sign = ThingMaker.MakeThing(signDef);
 			sign.SetPositionDirect(position);
 
-			var signComp = sign.TryGetComp<Comps.MSSMeme_Comp_PlaqueSign>();
+			var signComp = sign.TryGetComp<MSS.MemeSuperpack.MSSFP.Comps.MSSMeme_Comp_PlaqueSign_Compatibility>();
 			if (signComp == null)
 			{
 				Log.Error($"MSSMeme: Sign component not found for {target.NameShortColored}");

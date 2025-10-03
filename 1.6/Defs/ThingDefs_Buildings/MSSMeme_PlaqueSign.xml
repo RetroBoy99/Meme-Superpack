@@ -21,7 +21,7 @@
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<comps>
-			<li Class="MSSMeme.Comps.MSSMeme_CompProperties_PlaqueSign" />
+			<li Class="MSS.MemeSuperpack.MSSFP.Comps.MSSMeme_CompProperties_PlaqueSign_Compatibility" />
 		</comps>
 		<building>
 			<preventDeteriorationInside>true</preventDeteriorationInside>

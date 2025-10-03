@@ -1,17 +1,35 @@
-using MSSMeme.Pawns;
 using RimWorld;
 using Verse;
+using MSSFP.Pawns;
 
-namespace MSSMeme.Comps
+namespace MSS.MemeSuperpack.MSSFP.Comps
 {
-	public class MSSMeme_Comp_PlaqueSign : ThingComp
+	/// <summary>
+	/// Properties for the plaque sign component
+	/// </summary>
+	public class MSSMeme_CompProperties_PlaqueSign_Compatibility : CompProperties
 	{
-		private DynamicPawnStorageReflector pawnStorage;
+		public MSSMeme_CompProperties_PlaqueSign_Compatibility()
+		{
+			compClass = typeof(MSSMeme_Comp_PlaqueSign_Compatibility);
+		}
+	}
+}
+
+namespace MSS.MemeSuperpack.MSSFP.Comps
+{
+	/// <summary>
+	/// Compatibility version of the plaque sign component that directly references MSSFP
+	/// This assembly is only loaded when MSSFP is present
+	/// </summary>
+	public class MSSMeme_Comp_PlaqueSign_Compatibility : ThingComp
+	{
+		private DynamicPawnStorage pawnStorage;
 
 		public string OriginalPawnName => pawnStorage?.OriginalPawnName;
 		public bool HasStoredPawn => pawnStorage?.HasStoredPawn ?? false;
 
-		public MSSMeme_CompProperties_PlaqueSign Props => (MSSMeme_CompProperties_PlaqueSign)props;
+		public MSSMeme_CompProperties_PlaqueSign_Compatibility Props => (MSSMeme_CompProperties_PlaqueSign_Compatibility)props;
 
 		public override void PostSpawnSetup(bool respawningAfterLoad)
 		{
@@ -29,7 +47,7 @@ namespace MSSMeme.Comps
 		public bool StorePawn(Pawn pawn)
 		{
 			if (pawnStorage == null)
-				pawnStorage = new DynamicPawnStorageReflector();
+				pawnStorage = new DynamicPawnStorage();
 
 			var success = pawnStorage.StorePawn(pawn);
 
@@ -86,9 +104,10 @@ namespace MSSMeme.Comps
 			base.PostExposeData();
 
 			if (pawnStorage == null && Scribe.mode == LoadSaveMode.LoadingVars)
-				pawnStorage = new DynamicPawnStorageReflector();
+				pawnStorage = new DynamicPawnStorage();
 
 			pawnStorage?.ExposeData();
 		}
+
 	}
 }

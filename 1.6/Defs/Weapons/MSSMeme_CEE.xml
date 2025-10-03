@@ -56,7 +56,7 @@
 		<label>Longrat Extended</label>
 		<description>Extend your combat abilities with a rat, on a bat.</description>
 		<graphicData>
-			<texPath>Things/WeaponMelee/MSS_Longrat_Extended</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/MSS_Longrat_Extended</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>400</costStuffCount>
@@ -82,7 +82,7 @@
 		<label>Wombat Extended</label>
 		<description>Extend your combat abilities with a wombat, on a bat.</description>
 		<graphicData>
-			<texPath>Things/WeaponMelee/MSS_WombatExtended</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/MSS_WombatExtended</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>400</costStuffCount>
@@ -108,7 +108,7 @@
 		<label>Thongbat Extended</label>
 		<description>Extend your combat abilities with a thong, on a bat.</description>
 		<graphicData>
-			<texPath>Things/WeaponMelee/MSS_Thongbat_Extended</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/MSS_Thongbat_Extended</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>400</costStuffCount>
@@ -134,7 +134,7 @@
 		<label>Dongbat Extended</label>
 		<description>Extend your combat abilities with a *censored*, on a bat.</description>
 		<graphicData>
-			<texPath>Things/WeaponMelee/MSS_DongBat</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/MSS_DongBat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>400</costStuffCount>
@@ -162,7 +162,7 @@
 		<label>Batbat Extended</label>
 		<description>Extend your combat abilities with a bat, on a bat.</description>
 		<graphicData>
-			<texPath>Things/WeaponMelee/MSS_BatBat</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/MSS_BatBat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
@@ -196,7 +196,7 @@
 		<label>Longbat Extended</label>
 		<description>Extend your combat abilities by throwing a bat.</description>
 		<graphicData>
-			<texPath>Things/WeaponMelee/MSS_LongBat</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/MSS_LongBat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -244,7 +244,7 @@
 		<label>autopistol extended</label>
 		<description>An ancient pattern blowback-operated self-loading pistol, taped to a bat. It lacks stopping power, but is quick to fire, and the bat extends it's range by 50%. The bat also makes it more formidable in melee.</description>
 		<graphicData>
-			<texPath>Things/WeaponRanged/MSS_Bat_AutoPistol</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/MSS_Bat_AutoPistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.5</uiIconScale>
@@ -330,7 +330,7 @@
 		<label>assault rifle extended</label>
 		<description>A general-purpose gas-operated assault rifle for field or urban combat, taped to a bat. It has better range thanks to the bat, decent power, and good accuracy. The bat also makes it more formidable in melee.</description>
 		<graphicData>
-			<texPath>Things/WeaponRanged/MSS_Bat_AssaultRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/MSS_Bat_AssaultRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -418,7 +418,7 @@
 		<description>An ancient design of shotgun that emits a tight-packed spray of pellets, all taped to a stick. Deadly, but traditionally short range, the bat extends that range, and boosts it's use in melee.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
-			<texPath>Things/WeaponRanged/MSS_Bat_Shotgun</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/MSS_Bat_Shotgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Shotgun</soundInteract>
@@ -491,7 +491,7 @@
 		<description>An ancient design of precision sniper rifle, taped to a bat. Bolt action. It has an exceptionally long range, great accuracy (that is marred somewhat by the bat) and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
-			<texPath>Things/WeaponRanged/MSS_Bat_SniperRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/MSS_Bat_SniperRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -582,7 +582,7 @@
 		<description>A sturdy, well-balanced handgun with an uncanny knack for hitting its mark. Its unique design ensures every shot finds the most… appropriate target.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
-			<texPath>Things/WeaponRanged/backward_gun</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/backward_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.4</uiIconScale>
@@ -647,7 +647,7 @@
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet" MayRequire="MSS.FlavourPack">
 		<defName>MSS_PlaqueBullet</defName>
-		<thingClass>MSSMeme.Projectiles.MSSMeme_Projectile_PlaqueBullet</thingClass>
+		<thingClass>MSS.MemeSuperpack.MSSFP.Projectiles.MSSMeme_Projectile_PlaqueBullet_Compatibility</thingClass>
 		<label>plaque bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -663,9 +663,9 @@
 	<ThingDef ParentName="BaseHumanMakeableGun" MayRequire="MSS.FlavourPack">
 		<defName>MSS_PlaqueGun</defName>
 		<label>plaque gun</label>
-		<description>A gun that gives you toothaches, turns you into a “Live, Laugh, Love” wall sign, or removes your butthole. Great for party tricks, less great for survival.</description>
+		<description>A gun that gives you toothaches, turns you into a "Live, Laugh, Love" wall sign, or removes your butthole. Great for party tricks, less great for survival.</description>
 		<graphicData>
-			<texPath>Things/WeaponRanged/plaque_gun</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/plaque_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.4</uiIconScale>
