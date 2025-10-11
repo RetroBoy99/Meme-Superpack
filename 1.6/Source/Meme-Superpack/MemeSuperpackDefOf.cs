@@ -51,6 +51,8 @@ namespace MSS.MemeSuperpack
 		public static ThingDef MSSMeme_Balloon;
 		public static ThingDef MSSMeme_PawnFlyer_Balloon;
 		public static JobDef MSSMeme_ExtractTarget;
+		public static readonly PawnKindDef MSSMeme_BabyCritter;
+		public static readonly ThoughtDef MSSMeme_BabyCannonWTF;
 
 		static MemeSuperPackDefOf()
 		{

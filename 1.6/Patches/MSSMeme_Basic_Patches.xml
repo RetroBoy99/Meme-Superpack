@@ -60,4 +60,10 @@
 			<MSSMeme_Taff>0.05</MSSMeme_Taff>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="FabricationBench"]/recipes</xpath>
+		<value>
+			<li>MSSMeme_Make_TurboEncabulator</li>
+		</value>
+	</Operation>
 </Patch>
