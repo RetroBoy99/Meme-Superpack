@@ -39,6 +39,7 @@ namespace MSS.MemeSuperpack
 		public bool combustionAnimalsCanDoorbash = true;
 
 		public bool EnableTaffRaids = true;
+		public bool EnableMogus = true;
 
 		private readonly Listing_Standard _options = new();
 		private const float RowHeight = 32f;

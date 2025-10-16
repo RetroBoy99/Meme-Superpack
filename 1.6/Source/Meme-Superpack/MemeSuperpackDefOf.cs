@@ -53,6 +53,17 @@ namespace MSS.MemeSuperpack
 		public static JobDef MSSMeme_ExtractTarget;
 		public static readonly PawnKindDef MSSMeme_BabyCritter;
 		public static readonly ThoughtDef MSSMeme_BabyCannonWTF;
+		public static readonly JobDef MSSMeme_UseVent;
+		public static readonly JobDef MSSMeme_SusDeconstruct;
+		public static readonly JobDef MSSMeme_SusDoBill;
+		public static readonly PawnKindDef MSSMeme_MogusKind_Blue;
+		public static readonly PawnKindDef MSSMeme_MogusKind_Red;
+		public static readonly PawnKindDef MSSMeme_MogusKind_Green;
+		public static readonly PawnKindDef MSSMeme_MogusKind_Yellow;
+		public static readonly SoundDef MSSMeme_EmergencyMeetingKlaxon;
+		public static readonly AbilityDef MSSMeme_EmergencyMeeting;
+		public static readonly ThinkTreeDef MSSMeme_ImpostorBehavior;
+		public static readonly ThingDef MSSMeme_Mogus;
 
 		static MemeSuperPackDefOf()
 		{

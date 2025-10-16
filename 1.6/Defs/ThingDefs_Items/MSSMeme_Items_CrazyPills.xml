@@ -149,7 +149,7 @@
 				<severityPerDay>-0.5</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
-			<li Class="MSSFP.Hediffs.HediffCompProperties_BuildBase">
+			<li Class="MSS.MemeSuperpack.Hediffs.HediffCompProperties_BuildBase">
 				<ConstructJobs>
 					<li>PlaceNoCostFrame</li>
 					<li>FinishFrame</li>

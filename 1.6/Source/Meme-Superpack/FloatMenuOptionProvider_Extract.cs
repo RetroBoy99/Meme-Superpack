@@ -19,7 +19,6 @@ public class MSSMeme_FloatMenuOptionProvider_Extract : FloatMenuOptionProvider
 
 	public override bool SelectedPawnValid(Pawn pawn, FloatMenuContext context)
 	{
-		// Check if the selected pawn has a balloon in their inventory
 		var hasBalloon =
 			pawn?.inventory?.innerContainer?.Contains(MemeSuperPackDefOf.MSSMeme_Balloon) ?? false;
 		return base.SelectedPawnValid(pawn, context) && hasBalloon;
@@ -27,7 +26,6 @@ public class MSSMeme_FloatMenuOptionProvider_Extract : FloatMenuOptionProvider
 
 	protected override FloatMenuOption GetSingleOptionFor(Pawn clickedPawn, FloatMenuContext context)
 	{
-		// Check if the clicked pawn is downed or guilty
 		if (!clickedPawn.Downed && !clickedPawn.guilt.IsGuilty)
 		{
 			return null;
@@ -36,7 +34,7 @@ public class MSSMeme_FloatMenuOptionProvider_Extract : FloatMenuOptionProvider
 		if (!context.FirstSelectedPawn.CanReach(clickedPawn, PathEndMode.ClosestTouch, Danger.Deadly))
 		{
 			return new FloatMenuOption(
-				"MSSFP_CannotExtract".Translate((NamedArgument)clickedPawn)
+				"MSSMeme_CannotExtract".Translate((NamedArgument)clickedPawn)
 					+ ": "
 					+ "NoPath".Translate().CapitalizeFirst(),
 				null
@@ -46,16 +44,16 @@ public class MSSMeme_FloatMenuOptionProvider_Extract : FloatMenuOptionProvider
 		if (!MSSMeme_PawnFlyerBalloon.BedAvailableFor(clickedPawn, out Building_Bed _))
 		{
 			return new FloatMenuOption(
-				"MSSFP_CannotExtract".Translate((NamedArgument)clickedPawn)
+				"MSSMeme_CannotExtract".Translate((NamedArgument)clickedPawn)
 					+ ": "
-					+ "MSSFP_NoBed".Translate().CapitalizeFirst(),
+					+ "MSSMeme_NoBed".Translate().CapitalizeFirst(),
 				null
 			);
 		}
 
 		return FloatMenuUtility.DecoratePrioritizedTask(
 			new FloatMenuOption(
-				"MSSFP_Extract".Translate((NamedArgument)clickedPawn),
+				"MSSMeme_Extract".Translate((NamedArgument)clickedPawn),
 				(Action)(
 					() =>
 					{
