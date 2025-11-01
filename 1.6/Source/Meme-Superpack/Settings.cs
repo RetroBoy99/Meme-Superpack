@@ -40,6 +40,7 @@ namespace MSS.MemeSuperpack
 
 		public bool EnableTaffRaids = true;
 		public bool EnableMogus = true;
+		public bool OverrideRelicPool = true;
 
 		private readonly Listing_Standard _options = new();
 		private const float RowHeight = 32f;
@@ -193,6 +194,11 @@ namespace MSS.MemeSuperpack
 				ref autoRimRim,
 				"Allow colonists to automatically go for RimRim when it's time."
 			);
+			_options.CheckboxLabeled(
+				"Allow Override Relic Pool",
+				ref OverrideRelicPool,
+				"Override the possible pool of relics with this mods list"
+			);
 		}
 
 		private void DrawEventsSettings(Rect viewPort)
@@ -248,6 +254,11 @@ namespace MSS.MemeSuperpack
 				ref EnableTaffRaids,
 				"Allow Taffs to raid the colony"
 			);
+			_options.CheckboxLabeled(
+				"Allow Mogus",
+				ref EnableMogus,
+				"Allow Mogus to spawn naturally and as incidents"
+			);
 		}
 
 		public override void ExposeData()
@@ -281,6 +292,7 @@ namespace MSS.MemeSuperpack
 			Scribe_Values.Look(ref floorTrails, "floorTrails", true);
 			Scribe_Values.Look(ref fireTrails, "fireTrails", true);
 			Scribe_Values.Look(ref combustionAnimalsCanDoorbash, "combustionAnimalsCanDoorbash", true);
+			Scribe_Values.Look(ref OverrideRelicPool, "OverrideRelicPool", true);
 		}
 	}
 }

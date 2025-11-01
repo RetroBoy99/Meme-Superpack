@@ -19,9 +19,8 @@ public class MSSMeme_FloatMenuOptionProvider_Extract : FloatMenuOptionProvider
 
 	public override bool SelectedPawnValid(Pawn pawn, FloatMenuContext context)
 	{
-		var hasBalloon =
-			pawn?.inventory?.innerContainer?.Contains(MemeSuperPackDefOf.MSSMeme_Balloon) ?? false;
-		return base.SelectedPawnValid(pawn, context) && hasBalloon;
+		return base.SelectedPawnValid(pawn, context)
+			&& (pawn.Downed || (pawn.guilt?.IsGuilty ?? false));
 	}
 
 	protected override FloatMenuOption GetSingleOptionFor(Pawn clickedPawn, FloatMenuContext context)

@@ -60,23 +60,23 @@
 		<comps>
 			<li Class="MSS.MemeSuperpack.Comps.CompProperties_Impostor" />
 			<li
-				IfModActive="oskarpotocki.vanillafactionsexpanded.core"
+				MayRequire="oskarpotocki.vanillafactionsexpanded.core"
 				Class="VEF.AnimalBehaviours.CompProperties_Draftable"
 			>
 				<makeNonFleeingToo>true</makeNonFleeingToo>
 			</li>
 			<li
-				IfModActive="oskarpotocki.vanillafactionsexpanded.core"
+				MayRequire="oskarpotocki.vanillafactionsexpanded.core"
 				Class="VEF.AnimalBehaviours.CompProperties_LastStand"
 			>
 				<finalCoolDownMultiplier>6</finalCoolDownMultiplier>
 			</li>
 			<li
-				IfModActive="oskarpotocki.vanillafactionsexpanded.core"
+				MayRequire="oskarpotocki.vanillafactionsexpanded.core"
 				Class="VEF.AnimalBehaviours.CompProperties_DoesntFlee"
 			></li>
 			<li
-				IfModActive="oskarpotocki.vanillafactionsexpanded.core"
+				MayRequire="oskarpotocki.vanillafactionsexpanded.core"
 				Class="VEF.AnimalBehaviours.CompProperties_NoTamingDecay"
 			></li>
 		</comps>
