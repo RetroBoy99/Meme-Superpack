@@ -27,4 +27,27 @@
 	<MSSFP_DirtManEatingText>{0} is being eaten by a frogge!</MSSFP_DirtManEatingText>
 	<MSSMeme_EmergencyMeeting>Emergency Meeting!</MSSMeme_EmergencyMeeting>
 	<MSS_FP_Settings_enableMogus>Enable Moguses</MSS_FP_Settings_enableMogus>
+	<!-- Dirtman -->
+	<MSSMeme_HasDirt>There's a little dirt under the pillow</MSSMeme_HasDirt>
+	<MSSMeme_DoesNotHaveDirt>The pillow has no dirt under it</MSSMeme_DoesNotHaveDirt>
+	<MSSMeme_DirtManVisitLetterLabel>dirt man has come to town</MSSMeme_DirtManVisitLetterLabel>
+	<MSSMeme_DirtManVisitLetterText>you didn't put any dirt under your pillow did you?</MSSMeme_DirtManVisitLetterText>
+	<MSSMeme_DirtManNoVisitLetterLabel>dirt man has come to town</MSSMeme_DirtManNoVisitLetterLabel>
+	<MSSMeme_DirtManNoVisitLetterText>you put any dirt under your pillow, so you're safe</MSSMeme_DirtManNoVisitLetterText>
+	<MSSMeme_DirtManEatingLabel>Colonist being eaten!</MSSMeme_DirtManEatingLabel>
+	<!-- Bed Upgrade -->
+	<MSSMeme_BedLevelUp>{0} levelled up!</MSSMeme_BedLevelUp>
+    <MSSMeme_BedLevelUpWithReason>{0} levelled up because {1}!</MSSMeme_BedLevelUpWithReason>
+    <MSSMeme_BedLevelUpBecauseLovin>{0} got some lovin'</MSSMeme_BedLevelUpBecauseLovin>
+    <MSSMeme_BedLevelUpBecauseSlept>{0} got slept well</MSSMeme_BedLevelUpBecauseSlept>
+    <MSSMeme_BedLevelUpBecauseBorn>{0} was conceived in this bed</MSSMeme_BedLevelUpBecauseBorn>
+
+    <MSSMeme_BedExp>Current experience: {0}/{1}</MSSMeme_BedExp>
+    <MSSMeme_BedLevels>Current points available: {0}</MSSMeme_BedLevels>
+    <MSSMeme_PawnsSleptInBed>Pawns that have slept in this bed:</MSSMeme_PawnsSleptInBed>
+    <MSSMeme_PawnsLovedInBed>Pawns that have got some lovin' in this bed:</MSSMeme_PawnsLovedInBed>
+    <MSSMeme_PawnsConcievedInBed>Pawns that were conceived in this bed:</MSSMeme_PawnsConcievedInBed>
+
+    <MSSMeme_RenameDialog_Label>Rename the bed</MSSMeme_RenameDialog_Label>
+    <MSSMeme_RenameDialog_Apply>Apply</MSSMeme_RenameDialog_Apply>
 </LanguageData>

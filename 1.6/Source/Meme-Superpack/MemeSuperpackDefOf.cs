@@ -64,6 +64,11 @@ namespace MSS.MemeSuperpack
 		public static readonly AbilityDef MSSMeme_EmergencyMeeting;
 		public static readonly ThinkTreeDef MSSMeme_ImpostorBehavior;
 		public static readonly ThingDef MSSMeme_Mogus;
+		public static readonly PawnKindDef MSSMeme_Dirtman;
+		public static readonly JobDef MSSMeme_PutALittleDirtUnderThePillow;
+		public static readonly WorkTypeDef MSSMeme_AnomalyPrevention;
+		public static readonly ResearchProjectDef MSSMeme_Oskarian_Technology;
+		public static readonly HediffDef MSSMeme_WellSlept;
 
 		static MemeSuperPackDefOf()
 		{

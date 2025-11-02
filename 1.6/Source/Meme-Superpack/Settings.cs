@@ -41,6 +41,10 @@ namespace MSS.MemeSuperpack
 		public bool EnableTaffRaids = true;
 		public bool EnableMogus = true;
 		public bool OverrideRelicPool = true;
+		public bool MabelDestroyFloors = false;
+		public bool EnableDirtJobs = false;
+		public bool EnableOskarianTech = false;
+
 
 		private readonly Listing_Standard _options = new();
 		private const float RowHeight = 32f;
@@ -199,6 +203,21 @@ namespace MSS.MemeSuperpack
 				ref OverrideRelicPool,
 				"Override the possible pool of relics with this mods list"
 			);
+			_options.CheckboxLabeled(
+				"Allow Mabel to destroy floors",
+				ref MabelDestroyFloors,
+				"Allow Mabel to destroy floors"
+			);
+			_options.CheckboxLabeled(
+				"Allow Dirtman",
+				ref EnableDirtJobs,
+				"Allow dirtman to spawn naturally and as incidents"
+			);
+			_options.CheckboxLabeled(
+				"Allow Oskarian Technology",
+				ref EnableOskarianTech,
+				"Allow Oskarian technology to be researched"
+			);
 		}
 
 		private void DrawEventsSettings(Rect viewPort)
@@ -293,6 +312,9 @@ namespace MSS.MemeSuperpack
 			Scribe_Values.Look(ref fireTrails, "fireTrails", true);
 			Scribe_Values.Look(ref combustionAnimalsCanDoorbash, "combustionAnimalsCanDoorbash", true);
 			Scribe_Values.Look(ref OverrideRelicPool, "OverrideRelicPool", true);
+			Scribe_Values.Look(ref MabelDestroyFloors, "MabelDestroyFloors", false);
+			Scribe_Values.Look(ref EnableDirtJobs, "EnableDirtJobs", false);
+			Scribe_Values.Look(ref EnableOskarianTech, "EnableOskarianTech", false);
 		}
 	}
 }
