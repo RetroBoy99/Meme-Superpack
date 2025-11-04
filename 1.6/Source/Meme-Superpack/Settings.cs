@@ -44,6 +44,8 @@ namespace MSS.MemeSuperpack
 		public bool MabelDestroyFloors = false;
 		public bool EnableDirtJobs = false;
 		public bool EnableOskarianTech = false;
+		public bool EnableNonsenseIncidents = false;
+
 
 
 		private readonly Listing_Standard _options = new();
@@ -218,6 +220,11 @@ namespace MSS.MemeSuperpack
 				ref EnableOskarianTech,
 				"Allow Oskarian technology to be researched"
 			);
+			_options.CheckboxLabeled(
+				"Allow Nonsense Incidents",
+				ref EnableNonsenseIncidents,
+				"Allow nonsense incidents to spawn naturally and as incidents"
+			);
 		}
 
 		private void DrawEventsSettings(Rect viewPort)
@@ -315,6 +322,7 @@ namespace MSS.MemeSuperpack
 			Scribe_Values.Look(ref MabelDestroyFloors, "MabelDestroyFloors", false);
 			Scribe_Values.Look(ref EnableDirtJobs, "EnableDirtJobs", false);
 			Scribe_Values.Look(ref EnableOskarianTech, "EnableOskarianTech", false);
+			Scribe_Values.Look(ref EnableNonsenseIncidents, "EnableNonsenseIncidents", false);
 		}
 	}
 }

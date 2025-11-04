@@ -69,6 +69,11 @@ namespace MSS.MemeSuperpack
 		public static readonly WorkTypeDef MSSMeme_AnomalyPrevention;
 		public static readonly ResearchProjectDef MSSMeme_Oskarian_Technology;
 		public static readonly HediffDef MSSMeme_WellSlept;
+		public static readonly RulePackDef MSSMeme_Nonsense;
+		public static readonly TaleDef MSSMeme_Nonsense_Tale;
+		public static readonly ThoughtDef MSSMeme_Nonsense_Thought_Bad;
+		public static readonly ThoughtDef MSSMeme_Nonsense_Thought_Neutral;
+		public static readonly ThoughtDef MSSMeme_Nonsense_Thought_Good;
 
 		static MemeSuperPackDefOf()
 		{
