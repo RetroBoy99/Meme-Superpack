@@ -50,4 +50,8 @@
 
     <MSSMeme_RenameDialog_Label>Rename the bed</MSSMeme_RenameDialog_Label>
     <MSSMeme_RenameDialog_Apply>Apply</MSSMeme_RenameDialog_Apply>
+
+    <MSSMeme_LostBrainPower>{0} lost some experience in {1} when their brain matter was fired out their head-cannon.</MSSMeme_LostBrainPower>
+    <MSSMeme_LostBrainPowerDamaged>With no experience left in {1}, {0} lost an important part of their brain when it was fired out of their head-cannon.</MSSMeme_LostBrainPowerDamaged>
+
 </LanguageData>
